@@ -1,18 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			@@include('html/_hero.htm',{})
-			<main class="page">
-				@@include('html/_main.htm',{})
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{}) @@include('html/_hero.htm',{})
+      <main class="page">
+        <section class="section__brands">
+          <div class="brands__container">
+            <h2 class="brands__title">Over <span>1.3 million</span> users and global brands trust us</h2>
+            <div class="brands__list">
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand1.svg" alt="Dekoria" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand2.svg" alt="Dekathlon" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand3.svg" alt="Domino's" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand4.svg" alt="Heineken" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand5.svg" alt="Toyota" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand6.svg" alt="Renault" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand7.svg" alt="KFC" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section__lines">
+          <div class="lines__container">
+            <h2 class="lines__title">Our line of products</h2>
+            <h3 class="lines__subtitle">Here’s what we’re building to help businesses deliver amazing customer experiences.</h3>
+            <div class="lines__list">
+              <div class="lines__item">
+                <img class="lines__item-title-img lines__item-title-img_1" src="@img/lines/lines1.svg" alt="Cookieyes" />
+                <h5 class="lines__item-subtitle">Cookie consent solution for privacy compliance.</h5>
+                <a class="red-button-outline lines__item-link" href="#">Learn more</a>
+              </div>
+              <div class="lines__item">
+                <img class="lines__item-title-img lines__item-title-img_2" src="@img/lines/lines2.svg" alt="Webloffee" />
+                <h5 class="lines__item-subtitle">Plugins and extensions for eCommerce needs.</h5>
+                <a class="red-button-outline lines__item-link" href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section__awards">
+          <div class="awards__container">
+            <div class="awards__inner">
+              <div class="awards__text">
+                <h2 class="awards__title">Creators of award-winning products</h2>
+                <h4 class="awards__subtitle">Our products are loved by customers and recommended by leading industry experts.</h4>
+              </div>
+              <img class="awards__img" src="@img/awards/awards.png" alt="Our awards" />
+            </div>
+          </div>
+        </section>
+        <section class="section__slider-waves">
+          <div class="slider-waves__container">
+            <h2 class="slider-waves__title">Making waves with innovation</h2>
+            <h3 class="slider-waves__subtitle">We are in the news for being market leaders who deliver exceptional products.</h3>
+            <div class="slider-waves__list">
+              <div class="slider-waves__item">
+                <img class="slider-waves__thumb" src="@img/slider-waves/slide1.png" alt="" />
+              </div>
+              <div class="slider-waves__item">
+                <img class="slider-waves__thumb" src="@img/slider-waves/slide2.png" alt="" />
+              </div>
+              <div class="slider-waves__item">
+                <img class="slider-waves__thumb" src="@img/slider-waves/slide3.svg" alt="" />
+              </div>
+              <div class="slider-waves__item">
+                <img class="slider-waves__thumb" src="@img/slider-waves/slide4.svg" alt="" />
+              </div>
+            </div>
+            <div class="slider-waves__arrows">
+              <div class="slider-waves__arrow-left">
+				  <img src="@img/slider-waves/arrow-left.svg" alt="">
+			  </div>
+              <div class="slider-waves__arrow-right">
+				<img src="@img/slider-waves/arrow-left.svg" alt="">
+
+			  </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
 </html>
