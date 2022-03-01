@@ -1,18 +1,170 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			@@include('html/_hero.htm',{})
-			<main class="page">
-				@@include('html/_main.htm',{})
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{}) @@include('html/_hero.htm',{})
+      <main class="page">
+        <section class="section__brands">
+          <div class="brands__container">
+            <h2 class="brands__title">Over <span>1.3 million</span> users and global brands trust us</h2>
+            <div class="brands__list">
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand1.svg" alt="Dekoria" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand2.svg" alt="Dekathlon" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand3.svg" alt="Domino's" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand4.svg" alt="Heineken" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand5.svg" alt="Toyota" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand6.svg" alt="Renault" />
+              </div>
+              <div class="brands__item">
+                <img class="brands__thumb" src="@img/brand/brand7.svg" alt="KFC" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section__lines">
+          <div class="lines__container">
+            <h2 class="lines__title">Our line of products</h2>
+            <h3 class="lines__subtitle">Here’s what we’re building to help businesses deliver amazing customer experiences.</h3>
+            <div class="lines__list">
+              <div class="lines__item">
+                <img class="lines__item-title-img lines__item-title-img_1" src="@img/lines/lines1.svg" alt="Cookieyes" />
+                <h5 class="lines__item-subtitle">Cookie consent solution for privacy compliance.</h5>
+                <a class="red-button-outline lines__item-link" href="#">
+                  <span>
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3019_386)">
+                      <path d="M7.39375 13.0125L12.9049 7.50002L7.39235 1.98752M1.09375 7.50002H12.9063H1.09375Z" stroke="#BF0830" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_3019_386">
+                      <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                  </span>
+                  Learn more
+                </a>
+              </div>
+              <div class="lines__item">
+                <img class="lines__item-title-img lines__item-title-img_2" src="@img/lines/lines2.svg" alt="Webloffee" />
+                <h5 class="lines__item-subtitle">Plugins and extensions for eCommerce needs.</h5>
+                <a class="red-button-outline lines__item-link" href="#">
+                  <span>
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3019_386)">
+                      <path d="M7.39375 13.0125L12.9049 7.50002L7.39235 1.98752M1.09375 7.50002H12.9063H1.09375Z" stroke="#BF0830" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_3019_386">
+                      <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                  </span>
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section__awards">
+          <div class="awards__container">
+            <div class="awards__inner">
+              <div class="awards__text">
+                <h2 class="awards__title">Creators of award-winning products</h2>
+                <h4 class="awards__subtitle">Our products are loved by customers and recommended by leading industry experts.</h4>
+              </div>
+              <img class="awards__img" src="@img/awards/awards.png" alt="Our awards" />
+            </div>
+          </div>
+        </section>
+        <section class="section__slider-waves">
+          <div class="slider-waves__container">
+            <h2 class="slider-waves__title">Making waves with innovation</h2>
+            <h3 class="slider-waves__subtitle">We are in the news for being market leaders who deliver exceptional products.</h3>
+
+            <!-- Оболочка слайдера -->
+            <div class="slider-waves__slider swiper">
+              <!-- Двигающееся часть слайдера -->
+              <div class="slider-waves__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="slider-waves__slide swiper-slide">
+                  <img class="slider-waves__thumb" src="@img/slider-waves/slide1.png" alt="slide" />
+                </div>
+                <div class="slider-waves__slide swiper-slide">
+                  <img class="slider-waves__thumb" src="@img/slider-waves/slide2.png" alt="slide" />
+                </div>
+                <div class="slider-waves__slide swiper-slide">
+                  <img class="slider-waves__thumb" src="@img/slider-waves/slide3.png" alt="slide" />
+                </div>
+                <div class="slider-waves__slide swiper-slide">
+                  <img class="slider-waves__thumb" src="@img/slider-waves/slide4.png" alt="slide" />
+                </div>
+                <div class="slider-waves__slide swiper-slide">
+                  <img class="slider-waves__thumb" src="@img/slider-waves/slide2.png" alt="slide" />
+                </div>
+                <div class="slider-waves__slide swiper-slide">
+                  <img class="slider-waves__thumb" src="@img/slider-waves/slide3.png" alt="slide" />
+                </div>
+                <div class="slider-waves__slide swiper-slide">
+                  <img class="slider-waves__thumb" src="@img/slider-waves/slide1.png" alt="slide" />
+                </div>
+              </div>
+              <!-- Если нужна навигация (влево/вправо) -->
+              <button type="button" class="swiper-button-prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7053 19.2947C12.3158 19.6842 11.6842 19.6842 11.2947 19.2947C10.9054 18.9054 10.9051 18.2743 11.2941 17.8847L16.17 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L16.17 11L11.2941 6.11531C10.9051 5.72568 10.9054 5.0946 11.2947 4.70531C11.6842 4.31578 12.3158 4.31578 12.7053 4.70531L20 12L12.7053 19.2947Z" fill="#C2D1D9"/>
+                <mask id="mask0_1_258199" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16" height="16">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7053 19.2947C12.3158 19.6842 11.6842 19.6842 11.2947 19.2947C10.9054 18.9054 10.9051 18.2743 11.2941 17.8847L16.17 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L16.17 11L11.2941 6.11531C10.9051 5.72568 10.9054 5.0946 11.2947 4.70531C11.6842 4.31578 12.3158 4.31578 12.7053 4.70531L20 12L12.7053 19.2947Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask0_1_258199)">
+                <rect x="24" y="24" width="24" height="24" transform="rotate(180 24 24)" fill="#424B5A"/>
+                </g>
+                </svg>
+                </button>
+              <button type="button" class="swiper-button-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7053 19.2947C12.3158 19.6842 11.6842 19.6842 11.2947 19.2947C10.9054 18.9054 10.9051 18.2743 11.2941 17.8847L16.17 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L16.17 11L11.2941 6.11531C10.9051 5.72568 10.9054 5.0946 11.2947 4.70531C11.6842 4.31578 12.3158 4.31578 12.7053 4.70531L20 12L12.7053 19.2947Z" fill="#C2D1D9"/>
+                <mask id="mask0_1_258199" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="16" height="16">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7053 19.2947C12.3158 19.6842 11.6842 19.6842 11.2947 19.2947C10.9054 18.9054 10.9051 18.2743 11.2941 17.8847L16.17 13L5 13C4.44771 13 4 12.5523 4 12C4 11.4477 4.44771 11 5 11L16.17 11L11.2941 6.11531C10.9051 5.72568 10.9054 5.0946 11.2947 4.70531C11.6842 4.31578 12.3158 4.31578 12.7053 4.70531L20 12L12.7053 19.2947Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask0_1_258199)">
+                <rect x="24" y="24" width="24" height="24" transform="rotate(180 24 24)" fill="#424B5A"/>
+                </g>
+                </svg>
+                </button>
+              <!-- Если нужен скролбар -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+            
+          </div>
+        </section>
+        <section class="section__awards section__awards-join">
+          <div class="awards__container">
+            <div class="awards__inner">
+              <div class="awards__text">
+                <h2 class="awards__title">Let's build the next big thing!</h2>
+                <h4 class="awards__subtitle">Looking to achieve great things? You’ve come to the right place.</h4>
+                <a class="red-button-outline awards__button" href="#">Join the team</a>
+              </div>
+              <img class="awards__img" src="@img/awards/awards2.png" alt="Our awards" />
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
 </html>
