@@ -271,3 +271,16 @@
 		}
 	}
 }
+.hero-products{
+	// padding-bottom: rem(100);
+	.hero__img{
+		@media (max-width: $tablet) {
+			right: 0;
+			max-width: rem(300);
+		}
+		@media (max-width: $mobile) {
+			bottom: rem(0);
+			max-width: rem(250);
+		}
+	}
+}
